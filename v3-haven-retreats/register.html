@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your Haven Retreats account and start booking luxury cabin escapes.">
+  <title>Register — Haven Retreats</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+  <style>
+    /* ---- Auth Page Enhancements ---- */
+    .auth-page {
+      position: relative;
+      background-color: var(--bg-warm);
+      min-height: 100vh;
+      padding-top: var(--space-2xl);
+      padding-bottom: var(--space-2xl);
+    }
+
+    .auth-page::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image:
+        radial-gradient(circle at 80% 20%, rgba(124, 140, 110, 0.04) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(193, 123, 90, 0.04) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .auth-card {
+      position: relative;
+      z-index: 1;
+    }
+
+    .auth-page__decoration {
+      position: absolute;
+      bottom: var(--space-xl);
+      left: var(--space-xl);
+      font-family: var(--font-serif);
+      font-size: 8rem;
+      line-height: 1;
+      color: var(--accent-terracotta);
+      opacity: 0.04;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .auth-card__welcome-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--bg-cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-md);
+      color: var(--accent-sage);
+    }
+
+    .auth-card__welcome-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .form-input-wrapper {
+      position: relative;
+    }
+
+    .form-input-icon {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      transition: color var(--transition-fast);
+    }
+
+    .form-input-icon:hover {
+      color: var(--text-secondary);
+    }
+
+    .btn--auth {
+      width: 100%;
+      padding: 16px;
+      font-size: var(--text-base);
+      margin-top: var(--space-xs);
+    }
+
+    .password-strength {
+      display: flex;
+      gap: 4px;
+      margin-top: 8px;
+    }
+
+    .password-strength__bar {
+      flex: 1;
+      height: 3px;
+      border-radius: 2px;
+      background-color: var(--border-color);
+      transition: background-color var(--transition-fast);
+    }
+
+    .password-strength__bar.weak { background-color: #D4564A; }
+    .password-strength__bar.medium { background-color: var(--accent-terracotta); }
+    .password-strength__bar.strong { background-color: var(--accent-sage); }
+
+    .password-strength__text {
+      font-size: var(--text-xs);
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-align: right;
+    }
+
+    .form-group--phone .form-input {
+      padding-left: 60px;
+    }
+
+    .form-group--phone .phone-prefix {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: var(--text-sm);
+      color: var(--text-muted);
+      pointer-events: none;
+      border-right: 1px solid var(--border-color);
+      padding-right: 10px;
+    }
+
+    .auth-steps {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: var(--space-xl);
+    }
+
+    .auth-steps__dot {
+      width: 32px;
+      height: 3px;
+      border-radius: 2px;
+      background-color: var(--border-color);
+    }
+
+    .auth-steps__dot.active {
+      background-color: var(--accent-sage);
+    }
+
+    @media (max-width: 480px) {
+      .auth-page__decoration {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-page">
+    <!-- Decorative element -->
+    <div class="auth-page__decoration">Retreat</div>
+
+    <div class="auth-card auth-card--wide">
+      <!-- Logo -->
+      <div class="auth-card__logo">
+        <a href="index.html">Haven<span>.</span></a>
+      </div>
+
+      <!-- Welcome Icon -->
+      <div style="text-align: center;">
+        <div class="auth-card__welcome-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+      </div>
+
+      <!-- Progress dots -->
+      <div class="auth-steps">
+        <div class="auth-steps__dot active"></div>
+        <div class="auth-steps__dot"></div>
+        <div class="auth-steps__dot"></div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="auth-card__title">Create Your Account</h1>
+      <p class="auth-card__subtitle">Join Haven Retreats and discover your perfect escape.</p>
+
+      <!-- Register Form -->
+      <form id="registerForm" action="#" method="POST" novalidate>
+
+        <!-- Name Row -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-input"
+              placeholder="First name"
+              autocomplete="given-name"
+              required
+            >
+          </div>
+          <div class="form-group">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-input"
+              placeholder="Last name"
+              autocomplete="family-name"
+              required
+            >
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group form-group--phone">
+          <label for="phone" class="form-label">Phone Number</label>
+          <div class="form-input-wrapper">
+            <span class="phone-prefix">+1</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-input"
+              placeholder="(555) 000-0000"
+              autocomplete="tel"
+            >
+          </div>
+          <p class="form-hint">Optional — for booking confirmations via SMS</p>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password" class="form-label">Password</label>
+          <div class="form-input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input"
+              placeholder="Create a strong password"
+              autocomplete="new-password"
+              required
+            >
+            <svg class="form-input-icon" id="togglePassword" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div class="password-strength" id="passwordStrength">
+            <div class="password-strength__bar" id="strengthBar1"></div>
+            <div class="password-strength__bar" id="strengthBar2"></div>
+            <div class="password-strength__bar" id="strengthBar3"></div>
+            <div class="password-strength__bar" id="strengthBar4"></div>
+          </div>
+          <p class="password-strength__text" id="strengthText">Use 8+ characters with a mix of letters, numbers & symbols</p>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <div class="form-input-wrapper">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="form-input"
+              placeholder="Confirm your password"
+              autocomplete="new-password"
+              required
+            >
+            <svg class="form-input-icon" id="toggleConfirmPassword" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+        </div>
+
+        <!-- Terms -->
+        <div class="form-check">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">
+            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn btn--terracotta btn--auth">
+          Create Account
+        </button>
+      </form>
+
+      <!-- Divider -->
+      <div class="auth-divider">
+        <span>or sign up with</span>
+      </div>
+
+      <!-- Social Buttons -->
+      <div class="social-buttons">
+        <button type="button" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+          Sign up with Google
+        </button>
+
+        <button type="button" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#1877F2">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+          Sign up with Facebook
+        </button>
+
+        <button type="button" class="social-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#000000">
+            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+          </svg>
+          Sign up with Apple
+        </button>
+      </div>
+
+      <!-- Login link -->
+      <p class="auth-footer">
+        Already have an account? <a href="login.html">Sign in</a>
+      </p>
+
+      <!-- Back to home -->
+      <div class="auth-back">
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          Back to Home
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Toggle password visibility - Password field
+    function setupPasswordToggle(toggleId, inputId) {
+      const toggle = document.getElementById(toggleId);
+      const input = document.getElementById(inputId);
+
+      toggle.addEventListener('click', () => {
+        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+        input.setAttribute('type', type);
+
+        if (type === 'text') {
+          toggle.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/>';
+        } else {
+          toggle.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>';
+        }
+      });
+    }
+
+    setupPasswordToggle('togglePassword', 'password');
+    setupPasswordToggle('toggleConfirmPassword', 'confirmPassword');
+
+    // Password strength meter
+    const passwordInput = document.getElementById('password');
+    const bars = [
+      document.getElementById('strengthBar1'),
+      document.getElementById('strengthBar2'),
+      document.getElementById('strengthBar3'),
+      document.getElementById('strengthBar4')
+    ];
+    const strengthText = document.getElementById('strengthText');
+
+    passwordInput.addEventListener('input', () => {
+      const value = passwordInput.value;
+      let strength = 0;
+
+      if (value.length >= 8) strength++;
+      if (/[a-z]/.test(value) && /[A-Z]/.test(value)) strength++;
+      if (/[0-9]/.test(value)) strength++;
+      if (/[^a-zA-Z0-9]/.test(value)) strength++;
+
+      // Reset bars
+      bars.forEach(bar => {
+        bar.className = 'password-strength__bar';
+      });
+
+      // Color bars based on strength
+      const strengthLabels = ['', 'Weak', 'Fair', 'Good', 'Strong'];
+      const strengthClasses = ['', 'weak', 'medium', 'medium', 'strong'];
+
+      for (let i = 0; i < strength; i++) {
+        bars[i].classList.add(strengthClasses[strength]);
+      }
+
+      if (value.length === 0) {
+        strengthText.textContent = 'Use 8+ characters with a mix of letters, numbers & symbols';
+      } else {
+        strengthText.textContent = `Password strength: ${strengthLabels[strength]}`;
+      }
+    });
+
+    // Form validation
+    const registerForm = document.getElementById('registerForm');
+
+    registerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName');
+      const lastName = document.getElementById('lastName');
+      const email = document.getElementById('email');
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirmPassword');
+      const terms = document.getElementById('terms');
+      let isValid = true;
+
+      // Reset error states
+      const inputs = registerForm.querySelectorAll('.form-input');
+      inputs.forEach(input => input.classList.remove('form-input--error'));
+
+      // Validate first name
+      if (!firstName.value.trim()) {
+        firstName.classList.add('form-input--error');
+        isValid = false;
+      }
+
+      // Validate last name
+      if (!lastName.value.trim()) {
+        lastName.classList.add('form-input--error');
+        isValid = false;
+      }
+
+      // Validate email
+      if (!email.value || !email.value.includes('@') || !email.value.includes('.')) {
+        email.classList.add('form-input--error');
+        isValid = false;
+      }
+
+      // Validate password
+      if (!password.value || password.value.length < 8) {
+        password.classList.add('form-input--error');
+        isValid = false;
+      }
+
+      // Validate confirm password
+      if (confirmPassword.value !== password.value) {
+        confirmPassword.classList.add('form-input--error');
+        isValid = false;
+      }
+
+      // Validate terms
+      if (!terms.checked) {
+        terms.style.outline = '2px solid #D4564A';
+        isValid = false;
+        setTimeout(() => { terms.style.outline = 'none'; }, 2000);
+      }
+
+      if (isValid) {
+        // Update progress dots
+        const dots = document.querySelectorAll('.auth-steps__dot');
+        dots[1].classList.add('active');
+
+        const submitBtn = registerForm.querySelector('button[type="submit"]');
+        submitBtn.textContent = 'Creating account...';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+
+        setTimeout(() => {
+          dots[2].classList.add('active');
+          submitBtn.textContent = 'Account created!';
+          submitBtn.style.backgroundColor = 'var(--accent-sage)';
+          submitBtn.style.borderColor = 'var(--accent-sage)';
+
+          setTimeout(() => {
+            window.location.href = 'login.html';
+          }, 1000);
+        }, 1500);
+      }
+    });
+  </script>
+
+</body>
+</html>

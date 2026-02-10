@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Haven Retreats — Luxury cabin escapes designed for stillness. Discover handcrafted A-frame cabins nestled in nature.">
+  <title>Haven Retreats — Luxury Cabin Escapes</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVIGATION
+       ==================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Haven<span>.</span></a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link navbar__link--active">Home</a></li>
+        <li><a href="#cabins" class="navbar__link">Cabins</a></li>
+        <li><a href="#amenities" class="navbar__link">Amenities</a></li>
+        <li><a href="#testimonials" class="navbar__link">Reviews</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <div class="navbar__auth" id="navAuth">
+        <a href="login.html" class="navbar__auth-link">Login</a>
+        <a href="register.html" class="navbar__auth-link navbar__auth-link--register">Register</a>
+      </div>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <span class="hero__label">Luxury Cabin Retreats</span>
+        <h1 class="hero__title">Find your<br><em>quiet</em> place.</h1>
+        <p class="hero__description">
+          Handcrafted A-frame cabins designed for stillness, set among towering trees and open skies. A place where time slows and the world feels whole again.
+        </p>
+        <div class="hero__actions">
+          <a href="#cabins" class="btn btn--primary btn--lg">
+            Explore Cabins
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#about" class="btn btn--ghost btn--lg">Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <img src="../images/hero-exterior.jpeg" alt="A-frame cabin with pool surrounded by tropical landscape" loading="eager">
+        <div class="hero__image-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <div class="hero__image-badge-text">
+            4.9 Rating
+            <span>from 320+ reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       INTRO / ABOUT SECTION
+       ==================================================================== -->
+  <section class="intro" id="about">
+    <div class="intro__inner">
+      <span class="intro__label">Our Philosophy</span>
+      <p class="intro__quote">
+        "We believe the best luxury is <em>simplicity</em> — a warm fire, a canopy of stars, and the sound of nothing but the wind through the pines."
+      </p>
+      <p class="intro__text">
+        Every Haven cabin is a carefully considered space where architecture meets nature. We strip away the unnecessary to reveal what truly matters: light, warmth, quiet, and the beauty of the landscape beyond your window. Each retreat is unique, each moment your own.
+      </p>
+      <div class="intro__line"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CABIN CARDS
+       ==================================================================== -->
+  <section class="cabins section" id="cabins">
+    <div class="container">
+      <div class="cabins__header">
+        <span class="cabins__label">Our Collection</span>
+        <h2 class="cabins__title">Choose Your Retreat</h2>
+        <p class="cabins__subtitle">Six unique cabins, each with its own character. All share a commitment to comfort, craft, and connection to the natural world.</p>
+      </div>
+
+      <div class="cabins__grid">
+
+        <!-- Cabin 1: The Willow Cabin -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/cabin-night.jpeg" alt="The Willow Cabin illuminated at night" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Willow Cabin</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              North Valley, Lake District
+            </p>
+            <p class="cabin-card__description">
+              A dramatic night-lit A-frame tucked among the trees. Floor-to-ceiling windows frame the forest, making every evening feel like an event.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">2 Bedrooms</span>
+              <span class="cabin-card__tag">Pool</span>
+              <span class="cabin-card__tag">Fireplace</span>
+              <span class="cabin-card__tag">WiFi</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$285</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 2: The Cedar House -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/cabin-sunset.jpeg" alt="The Cedar House at golden hour with pool" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Cedar House</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Sunset Ridge, Coastal Hills
+            </p>
+            <p class="cabin-card__description">
+              Golden-hour perfection. This warm-toned retreat features a private infinity pool that catches every sunset and a terrace built for slow mornings.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">3 Bedrooms</span>
+              <span class="cabin-card__tag">Infinity Pool</span>
+              <span class="cabin-card__tag">Kitchen</span>
+              <span class="cabin-card__tag">Garden</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$340</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 3: The Birch Retreat -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/cabin-daylight.jpeg" alt="The Birch Retreat exterior with garden" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Birch Retreat</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Meadow Brook, Countryside
+            </p>
+            <p class="cabin-card__description">
+              Family-friendly with a generous garden and outdoor play areas. Bright, airy interiors with Scandinavian-inspired touches throughout.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">4 Bedrooms</span>
+              <span class="cabin-card__tag">Garden</span>
+              <span class="cabin-card__tag">Playground</span>
+              <span class="cabin-card__tag">Pet Friendly</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$260</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 4: The Sage Lodge -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/living-area-3.jpeg" alt="The Sage Lodge warm living interior" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Sage Lodge</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Highland Terrace, Mountain Pass
+            </p>
+            <p class="cabin-card__description">
+              Warm terracotta and soft beige tones define this cozy lodge. The living area features deep sofas, a stone hearth, and views across the valley.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">2 Bedrooms</span>
+              <span class="cabin-card__tag">Fireplace</span>
+              <span class="cabin-card__tag">Mountain View</span>
+              <span class="cabin-card__tag">Sauna</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$310</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 5: The Oak Haven -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/indoor-pool-1.jpeg" alt="The Oak Haven indoor pool with atmospheric lighting" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Oak Haven</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Whispering Pines, Forest Edge
+            </p>
+            <p class="cabin-card__description">
+              The ultimate wellness retreat with a spectacular indoor pool beneath cathedral ceilings. Hanging rattan chairs and ambient lighting create pure serenity.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">3 Bedrooms</span>
+              <span class="cabin-card__tag">Indoor Pool</span>
+              <span class="cabin-card__tag">Spa</span>
+              <span class="cabin-card__tag">Yoga Deck</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$420</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Cabin 6: The Fern Cottage -->
+        <article class="cabin-card animate-on-scroll">
+          <div class="cabin-card__image-wrap">
+            <img src="../images/living-cozy.jpeg" alt="The Fern Cottage cozy interior with string lights" class="cabin-card__image" loading="lazy">
+            <button class="cabin-card__favorite" aria-label="Save to favorites">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="cabin-card__body">
+            <h3 class="cabin-card__name">The Fern Cottage</h3>
+            <p class="cabin-card__location">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Fern Hollow, River Bend
+            </p>
+            <p class="cabin-card__description">
+              Intimate and enchanting, strung with warm lights and layered textures. Perfect for couples seeking a romantic escape wrapped in nature's embrace.
+            </p>
+            <div class="cabin-card__tags">
+              <span class="cabin-card__tag">1 Bedroom</span>
+              <span class="cabin-card__tag">Hot Tub</span>
+              <span class="cabin-card__tag">Firepit</span>
+              <span class="cabin-card__tag">Romantic</span>
+            </div>
+            <div class="cabin-card__footer">
+              <div class="cabin-card__price">
+                <strong>$195</strong> / night
+              </div>
+              <a href="#" class="cabin-card__link">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       AMENITIES
+       ==================================================================== -->
+  <section class="amenities section" id="amenities">
+    <div class="container">
+      <div class="amenities__header">
+        <span class="amenities__label">What We Offer</span>
+        <h2 class="amenities__title">Thoughtful Amenities</h2>
+      </div>
+
+      <div class="amenities__grid">
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8z"/><path d="M14 4h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M2 2h8v8H2z"/></svg>
+          </div>
+          <div class="amenity-item__name">Private Pools</div>
+          <div class="amenity-item__desc">Indoor & outdoor</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10l4.2 2.4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <div class="amenity-item__name">24/7 Concierge</div>
+          <div class="amenity-item__desc">Always available</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>
+          </div>
+          <div class="amenity-item__name">Gourmet Kitchen</div>
+          <div class="amenity-item__desc">Fully equipped</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <div class="amenity-item__name">High-Speed WiFi</div>
+          <div class="amenity-item__desc">Work remotely</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+          </div>
+          <div class="amenity-item__name">Wellness Spa</div>
+          <div class="amenity-item__desc">Sauna & massage</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="amenity-item__name">Smart Home</div>
+          <div class="amenity-item__desc">Automated systems</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="amenity-item__name">Breakfast Hamper</div>
+          <div class="amenity-item__desc">Local produce daily</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2"/><path d="M12 21v2"/><path d="M4.22 4.22l1.42 1.42"/><path d="M18.36 18.36l1.42 1.42"/><path d="M1 12h2"/><path d="M21 12h2"/><path d="M4.22 19.78l1.42-1.42"/><path d="M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <div class="amenity-item__name">Outdoor Living</div>
+          <div class="amenity-item__desc">Terraces & firepits</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       IMAGE BREAK
+       ==================================================================== -->
+  <section class="image-break image-break--full">
+    <div class="image-break__container">
+      <img src="../images/pool-aerial.jpeg" alt="Aerial view of cabin pool and lounge area surrounded by tropical greenery" class="image-break__img" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       TESTIMONIALS
+       ==================================================================== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="testimonials__header">
+        <span class="testimonials__label">Guest Experiences</span>
+        <h2 class="testimonials__title">Words from Our Guests</h2>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card animate-on-scroll">
+          <span class="testimonial-card__quote-mark">"</span>
+          <p class="testimonial-card__text">
+            The Willow Cabin exceeded every expectation. The silence at night, broken only by the crackling fire, was exactly what we needed. We've already booked our return trip for autumn.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">EM</div>
+            <div>
+              <div class="testimonial-card__name">Elena Marchetti</div>
+              <div class="testimonial-card__cabin">Stayed at The Willow Cabin</div>
+            </div>
+            <div class="testimonial-card__stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card animate-on-scroll">
+          <span class="testimonial-card__quote-mark">"</span>
+          <p class="testimonial-card__text">
+            As an architect, I appreciate spaces that feel intentional. The Oak Haven is masterfully designed — every corner, every view, every material choice feels purposeful. Truly inspiring.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">JK</div>
+            <div>
+              <div class="testimonial-card__name">James Kowalski</div>
+              <div class="testimonial-card__cabin">Stayed at The Oak Haven</div>
+            </div>
+            <div class="testimonial-card__stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card animate-on-scroll">
+          <span class="testimonial-card__quote-mark">"</span>
+          <p class="testimonial-card__text">
+            We brought our children to The Birch Retreat and it was pure magic. The garden, the space, the feeling of being tucked away from the world — they still ask when we're going back.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">SN</div>
+            <div>
+              <div class="testimonial-card__name">Sofia Nakamura</div>
+              <div class="testimonial-card__cabin">Stayed at The Birch Retreat</div>
+            </div>
+            <div class="testimonial-card__stars">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CTA SECTION
+       ==================================================================== -->
+  <section class="cta section" id="contact">
+    <div class="cta__inner">
+      <span class="cta__label">Begin Your Journey</span>
+      <h2 class="cta__title">Ready to Escape?</h2>
+      <p class="cta__text">
+        Your perfect retreat awaits. Browse our collection of handcrafted cabins and find the space that speaks to you.
+      </p>
+      <div class="cta__actions">
+        <a href="#cabins" class="btn btn--primary btn--lg">Browse All Cabins</a>
+        <a href="register.html" class="btn btn--secondary btn--lg">Create Account</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">Haven<span>.</span></a>
+          <p class="footer__brand-text">
+            Luxury cabin retreats designed for those who seek stillness, beauty, and a deeper connection with nature. Each Haven is a world unto itself.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12a4 4 0 0 1 8 0c0 2.22-1.79 4-4 4"/><path d="M9.5 16.5L8 22"/><circle cx="12" cy="12" r="10"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Explore</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="#cabins" class="footer__link">Our Cabins</a></li>
+            <li><a href="#amenities" class="footer__link">Amenities</a></li>
+            <li><a href="#testimonials" class="footer__link">Guest Reviews</a></li>
+            <li><a href="#" class="footer__link">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <ul class="footer__links">
+            <li><a href="#about" class="footer__link">Our Story</a></li>
+            <li><a href="#" class="footer__link">Sustainability</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+            <li><a href="#" class="footer__link">Press</a></li>
+            <li><a href="#contact" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Booking Policy</a></li>
+            <li><a href="#" class="footer__link">Cancellation</a></li>
+            <li><a href="login.html" class="footer__link">Login</a></li>
+            <li><a href="register.html" class="footer__link">Register</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Haven Retreats. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       SCRIPTS
+       ==================================================================== -->
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navAuth = document.getElementById('navAuth');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navAuth.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('.navbar__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navAuth.classList.remove('active');
+      });
+    });
+
+    // Scroll animations (Intersection Observer)
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Favorite button toggle
+    document.querySelectorAll('.cabin-card__favorite').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        btn.classList.toggle('active');
+        const svg = btn.querySelector('svg');
+        if (btn.classList.contains('active')) {
+          svg.setAttribute('fill', 'currentColor');
+        } else {
+          svg.setAttribute('fill', 'none');
+        }
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          const offset = navbar.offsetHeight + 20;
+          const position = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: position, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
