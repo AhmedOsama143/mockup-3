@@ -316,6 +316,7 @@
       <div class="cabins__grid cabins__grid--four">
 
         <!-- Cabin 1 -->
+        <a href="cabin-details.html?id=1" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/cabin-night.jpeg" alt="European Hut Cabin 1 — 3 bedrooms with indoor and outdoor heated swimming pools" class="cabin-card__image" loading="lazy">
@@ -343,18 +344,20 @@
               <div class="cabin-card__price">
                 <strong>12,000 EGP</strong> / day
               </div>
-              <a href="contact.html" class="cabin-card__link">
-                Book Now
+              <span class="cabin-card__link">
+                View Details
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-              </a>
+              </span>
             </div>
             <div class="cabin-card__checkin">
               Check-in 12 PM &middot; Check-out 9 AM
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 2 -->
+        <a href="cabin-details.html?id=2" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/cabin-sunset.jpeg" alt="European Hut Cabin 2 — 4 master bedrooms with swimming pool" class="cabin-card__image" loading="lazy">
@@ -382,18 +385,20 @@
               <div class="cabin-card__price">
                 <strong>7,000 EGP</strong> / day
               </div>
-              <a href="contact.html" class="cabin-card__link">
-                Book Now
+              <span class="cabin-card__link">
+                View Details
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-              </a>
+              </span>
             </div>
             <div class="cabin-card__checkin">
               Check-in 2 PM &middot; Check-out 10 AM
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 3 -->
+        <a href="cabin-details.html?id=3" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/indoor-pool-1.jpeg" alt="European Hut Cabin 3 — 3 bedrooms with indoor heated swimming pool" class="cabin-card__image" loading="lazy">
@@ -419,18 +424,20 @@
               <div class="cabin-card__price">
                 <strong>11,000 EGP</strong> / day
               </div>
-              <a href="contact.html" class="cabin-card__link">
-                Book Now
+              <span class="cabin-card__link">
+                View Details
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-              </a>
+              </span>
             </div>
             <div class="cabin-card__checkin">
               Check-in 2 PM &middot; Check-out 10 AM
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 4 -->
+        <a href="cabin-details.html?id=4" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/living-area-3.jpeg" alt="European Hut Cabin 4 — Premium 4 bedrooms with glass pool and jacuzzi" class="cabin-card__image" loading="lazy">
@@ -458,16 +465,17 @@
               <div class="cabin-card__price">
                 <strong>15,000 EGP</strong> / day
               </div>
-              <a href="contact.html" class="cabin-card__link">
-                Book Now
+              <span class="cabin-card__link">
+                View Details
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-              </a>
+              </span>
             </div>
             <div class="cabin-card__checkin">
               Check-in 12 PM &middot; Check-out 9 AM
             </div>
           </div>
         </article>
+        </a>
 
       </div>
     </div>
@@ -679,7 +687,7 @@
     // Favorite button toggle
     document.querySelectorAll('.cabin-card__favorite').forEach(btn => {
       btn.addEventListener('click', (e) => {
-        e.preventDefault(); btn.classList.toggle('active');
+        e.preventDefault(); e.stopPropagation(); btn.classList.toggle('active');
         const svg = btn.querySelector('svg');
         if (btn.classList.contains('active')) { svg.setAttribute('fill', 'currentColor'); }
         else { svg.setAttribute('fill', 'none'); }

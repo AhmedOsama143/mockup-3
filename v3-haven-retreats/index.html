@@ -214,6 +214,7 @@
       <div class="cabins__grid cabins__grid--four">
 
         <!-- Cabin 1 -->
+        <a href="cabin-details.html?id=1" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/cabin-night.jpeg" alt="European Hut Cabin 1 — 3 bedrooms with indoor and outdoor heated swimming pools" class="cabin-card__image" loading="lazy">
@@ -247,8 +248,10 @@
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 2 -->
+        <a href="cabin-details.html?id=2" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/cabin-sunset.jpeg" alt="European Hut Cabin 2 — 4 master bedrooms with swimming pool" class="cabin-card__image" loading="lazy">
@@ -282,8 +285,10 @@
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 3 -->
+        <a href="cabin-details.html?id=3" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/indoor-pool-1.jpeg" alt="European Hut Cabin 3 — 3 bedrooms with indoor heated swimming pool" class="cabin-card__image" loading="lazy">
@@ -315,8 +320,10 @@
             </div>
           </div>
         </article>
+        </a>
 
         <!-- Cabin 4 -->
+        <a href="cabin-details.html?id=4" class="cabin-card-link" style="text-decoration:none;color:inherit;display:block;">
         <article class="cabin-card animate-on-scroll">
           <div class="cabin-card__image-wrap">
             <img src="./images/living-area-3.jpeg" alt="European Hut Cabin 4 — Premium 4 bedrooms with glass pool and jacuzzi" class="cabin-card__image" loading="lazy">
@@ -350,6 +357,7 @@
             </div>
           </div>
         </article>
+        </a>
 
       </div>
     </div>
@@ -755,6 +763,7 @@
     document.querySelectorAll('.cabin-card__favorite').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
+        e.stopPropagation();
         btn.classList.toggle('active');
         const svg = btn.querySelector('svg');
         if (btn.classList.contains('active')) {
