@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the European Hut experience — heated pools, A-frame architecture, full privacy, house rules, and everything you need to know for your stay.">
+  <title>The Experience — European Hut | الكوخ الأوروبي</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,10 90,90 10,90' fill='%237C8C6E' opacity='0.9'/><rect x='40' y='55' width='20' height='35' fill='%23FDFCFA' rx='2'/></svg>">
+</head>
+<body>
+
+  <!-- ====================================================================
+       ANNOUNCEMENT BANNER
+       ==================================================================== -->
+  <div class="announcement-banner" id="announcementBanner">
+    <div class="announcement-banner__inner">
+      <p>New cabins coming at the beginning of the year — Stay tuned for exciting additions to our collection!</p>
+      <button class="announcement-banner__close" id="closeBanner" aria-label="Close announcement">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       NAVIGATION
+       ==================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">European Hut<span>.</span></a>
+
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="index.html" class="navbar__link">Home</a></li>
+        <li><a href="cabins.html" class="navbar__link">Cabins</a></li>
+        <li><a href="experience.html" class="navbar__link navbar__link--active">Experience</a></li>
+        <li><a href="about.html" class="navbar__link">About</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+
+      <div class="navbar__auth" id="navAuth">
+        <a href="login.html" class="navbar__auth-link">Login</a>
+        <a href="register.html" class="navbar__auth-link navbar__auth-link--register">Register</a>
+      </div>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <section class="hero">
+    <div class="hero__inner" style="grid-template-columns: 1fr; text-align: center;">
+      <div class="hero__content" style="padding-right: 0; max-width: 700px; margin: 0 auto;">
+        <span class="hero__label">Guest Experience</span>
+        <h1 class="hero__title">The European Hut<br><em>Experience</em></h1>
+        <p class="hero__description" style="max-width: 560px; margin: 0 auto var(--space-xl);">
+          From heated indoor pools to stunning A-frame architecture, discover what makes every stay at European Hut unforgettable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       AMENITIES OVERVIEW
+       ==================================================================== -->
+  <section class="amenities section" id="amenities">
+    <div class="container">
+      <div class="amenities__header">
+        <span class="amenities__label">What We Offer</span>
+        <h2 class="amenities__title">Amenities &amp; Features</h2>
+      </div>
+
+      <div class="amenities__grid">
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8z"/><path d="M14 4h6a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M2 2h8v8H2z"/></svg>
+          </div>
+          <div class="amenity-item__name">Heated Pools</div>
+          <div class="amenity-item__desc">Indoor &amp; outdoor options</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div class="amenity-item__name">100% Privacy</div>
+          <div class="amenity-item__desc">Fully private compounds</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div class="amenity-item__name">European Design</div>
+          <div class="amenity-item__desc">Stylish interiors</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="amenity-item__name">Families Welcome</div>
+          <div class="amenity-item__desc">Up to 8 guests</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="amenity-item__name">Jacuzzi</div>
+          <div class="amenity-item__desc">Available in Cabin 4</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="amenity-item__name">Glass Pool</div>
+          <div class="amenity-item__desc">Indoor heated glass pool</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <div class="amenity-item__name">Nearby Supermarket</div>
+          <div class="amenity-item__desc">Hyper One Desert Road</div>
+        </div>
+
+        <div class="amenity-item animate-on-scroll">
+          <div class="amenity-item__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M4.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S3 21.33 3 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 10.33 9.33 11 8.5 11h-5C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8h5c.83 0 1.5.67 1.5 1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg>
+          </div>
+          <div class="amenity-item__name">Filming Available</div>
+          <div class="amenity-item__desc">By arrangement</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       WHAT TO EXPECT — HIGHLIGHTS
+       ==================================================================== -->
+  <section class="highlights section" id="what-to-expect">
+    <div class="container">
+      <div class="highlights__header">
+        <span class="highlights__label">What to Expect</span>
+        <h2 class="highlights__title">Your Stay, Elevated</h2>
+      </div>
+
+      <!-- Highlight 1: Privacy & Comfort -->
+      <div class="highlight-row animate-on-scroll">
+        <div class="highlight-row__image">
+          <img src="./images/garden-view.jpeg" alt="Panoramic view from inside A-frame cabin overlooking private walled garden and pool" loading="lazy">
+        </div>
+        <div class="highlight-row__content">
+          <span class="highlight-row__label">Complete Seclusion</span>
+          <h3 class="highlight-row__title">Privacy &amp; Comfort</h3>
+          <p class="highlight-row__text">
+            Every cabin sits within its own fully walled compound, giving you and your guests total privacy from the moment you arrive. Enjoy lush gardens, outdoor pools, and open-air lounges — all exclusively yours. No shared spaces, no interruptions, just your own private retreat on the desert road.
+          </p>
+          <ul class="highlight-row__list">
+            <li>Fully walled private compounds</li>
+            <li>Exclusive access for your group</li>
+            <li>Landscaped gardens &amp; lawns</li>
+            <li>Shaded outdoor lounge areas</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Highlight 2: European-Inspired Design (reversed) -->
+      <div class="highlight-row highlight-row--reverse animate-on-scroll">
+        <div class="highlight-row__image">
+          <img src="./images/lounge-swing.jpeg" alt="Indoor lounge with swing chair, A-frame wooden ceilings, steel beams, and glass walls" loading="lazy">
+        </div>
+        <div class="highlight-row__content">
+          <span class="highlight-row__label">Architectural Marvel</span>
+          <h3 class="highlight-row__title">European-Inspired Design</h3>
+          <p class="highlight-row__text">
+            Step inside and be greeted by soaring A-frame ceilings crafted from natural wood, accented with industrial steel beams and floor-to-ceiling glass walls. Hanging rattan chairs, designer curved sofas, and ambient pendant lighting create a space that feels both grand and intimate — a true European escape without leaving Egypt.
+          </p>
+          <ul class="highlight-row__list">
+            <li>A-frame wood &amp; steel architecture</li>
+            <li>Floor-to-ceiling glass facades</li>
+            <li>Hanging swing chairs &amp; sofas</li>
+            <li>Ambient pendant lighting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       HOUSE RULES & INFO
+       ==================================================================== -->
+  <section class="rules section" id="rules">
+    <div class="container">
+      <div class="rules__header">
+        <span class="rules__label">Important Information</span>
+        <h2 class="rules__title">House Rules &amp; Policies</h2>
+      </div>
+
+      <div class="rules__grid">
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="rule-card__title">Guest Policy</h3>
+          <p class="rule-card__text">Maximum 8 people including children. We welcome couples, families, and women-only groups.</p>
+        </div>
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10l4.2 2.4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 class="rule-card__title">Cabin 1 &amp; 4 Timings</h3>
+          <p class="rule-card__text">Check-in at 12:00 PM. Check-out at 9:00 AM the next day. Please respect these times for smooth transitions.</p>
+        </div>
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v10l4.2 2.4"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3 class="rule-card__title">Cabin 2 &amp; 3 Timings</h3>
+          <p class="rule-card__text">Check-in at 2:00 PM. Check-out at 10:00 AM the next day. Please respect these times for smooth transitions.</p>
+        </div>
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <h3 class="rule-card__title">Filming &amp; Photography</h3>
+          <p class="rule-card__text">Professional filming and photography sessions require advance arrangement. Pricing varies depending on the scope and duration of the shoot.</p>
+        </div>
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="rule-card__title">Convenient Location</h3>
+          <p class="rule-card__text">Located in the European Countryside on the Cairo-Alexandria Desert Road, half an hour past Sheikh Zayed. Hyper One and supermarkets nearby.</p>
+        </div>
+
+        <div class="rule-card animate-on-scroll">
+          <div class="rule-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="rule-card__title">Privacy Guaranteed</h3>
+          <p class="rule-card__text">All four cabins are designed with 100% privacy in mind. Your space is exclusively yours for the entire duration of your stay.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       COMING SOON — INTRO SECTION
+       ==================================================================== -->
+  <section class="intro" id="coming-soon">
+    <div class="intro__inner">
+      <span class="intro__label">Coming Soon</span>
+      <p class="intro__quote">
+        New cabins arriving at the <em>beginning of the year</em> — expanding our collection with even more unique designs and experiences.
+      </p>
+      <p class="intro__text">
+        We are continuously growing. New European-style cabins are being added to our retreat, each with its own character, heated pools, and the same 100% privacy you love. Stay tuned for exciting additions to the European Hut family.
+      </p>
+      <div class="intro__line"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CTA / CONTACT SECTION
+       ==================================================================== -->
+  <section class="cta section" id="contact">
+    <div class="cta__inner">
+      <span class="cta__label">Book Your Stay</span>
+      <h2 class="cta__title">Ready to Book?</h2>
+      <p class="cta__text">
+        Contact us directly to reserve your private cabin. Call or message us on WhatsApp for instant availability and reservations.
+      </p>
+      <div class="cta__contact-info">
+        <a href="tel:+2001200081890" class="cta__contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          01200081890
+        </a>
+        <a href="https://maps.app.goo.gl/14f14ScWuTx4JTFv7" target="_blank" rel="noopener noreferrer" class="cta__contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          View on Google Maps
+        </a>
+      </div>
+      <div class="cta__actions">
+        <a href="tel:+2001200081890" class="btn btn--primary btn--lg">Call Now</a>
+        <a href="https://wa.me/2001200081890" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--lg">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">European Hut<span>.</span></a>
+          <p class="footer__brand-text" dir="rtl" lang="ar" style="font-family: 'Cairo', sans-serif; margin-bottom: 8px;">
+            الكوخ الأوروبي
+          </p>
+          <p class="footer__brand-text">
+            Luxury private cabin rentals with heated pools and 100% privacy on the Cairo-Alexandria Desert Road. Couples, families, and women-only groups welcome.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063992444361&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@european.gott" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="TikTok">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Explore</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="cabins.html" class="footer__link">Our Cabins</a></li>
+            <li><a href="experience.html" class="footer__link">Experience</a></li>
+            <li><a href="about.html" class="footer__link">About Us</a></li>
+            <li><a href="contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+2001200081890" class="footer__link">01200081890</a></li>
+            <li><a href="https://wa.me/2001200081890" target="_blank" rel="noopener noreferrer" class="footer__link">WhatsApp</a></li>
+            <li><a href="https://maps.app.goo.gl/14f14ScWuTx4JTFv7" target="_blank" rel="noopener noreferrer" class="footer__link">Google Maps</a></li>
+            <li><a href="https://www.instagram.com/bungalow_hut/" target="_blank" rel="noopener noreferrer" class="footer__link">@bungalow_hut</a></li>
+            <li><a href="https://www.tiktok.com/@european.gott" target="_blank" rel="noopener noreferrer" class="footer__link">@european.gott</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Account</h4>
+          <ul class="footer__links">
+            <li><a href="login.html" class="footer__link">Login</a></li>
+            <li><a href="register.html" class="footer__link">Register</a></li>
+            <li><a href="experience.html" class="footer__link">Booking Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 European Hut (الكوخ الأوروبي). All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       SCRIPTS
+       ==================================================================== -->
+  <script>
+    // Announcement banner close
+    const closeBanner = document.getElementById('closeBanner');
+    const banner = document.getElementById('announcementBanner');
+    if (closeBanner && banner) {
+      closeBanner.addEventListener('click', () => {
+        banner.style.display = 'none';
+        // Adjust navbar position
+        document.getElementById('navbar').style.top = '0';
+      });
+    }
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navAuth = document.getElementById('navAuth');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      navAuth.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    navLinks.querySelectorAll('.navbar__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navAuth.classList.remove('active');
+      });
+    });
+
+    // Scroll animations (Intersection Observer)
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          const offset = navbar.offsetHeight + 20;
+          const position = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: position, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
